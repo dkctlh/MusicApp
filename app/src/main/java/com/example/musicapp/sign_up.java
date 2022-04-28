@@ -17,6 +17,7 @@ public class sign_up extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
         db = new DBHelper(this);
     }
+
     public void logIn (View v) {
         Intent lo_i =new Intent(this,MainActivity.class);
         String u_name=((EditText) findViewById(R.id.editTextTextPersonName2)).getText().toString();
@@ -35,6 +36,7 @@ public class sign_up extends AppCompatActivity {
                     Boolean insert=db.insertData(u_name,pass,e_mail);
                     if(insert==true){
                         Toast.makeText(this, "Kayıt olma başarılı.", Toast.LENGTH_SHORT).show();
+                        sendEmail();
                         startActivity(lo_i);
                     }else{
                         Toast.makeText(this, "Kayıt olma işlemi başarısız.", Toast.LENGTH_SHORT).show();
@@ -53,6 +55,16 @@ public class sign_up extends AppCompatActivity {
 
 
     }
+        private void sendEmail(){
+            String u_name=((EditText) findViewById(R.id.editTextTextPersonName2)).getText().toString();
+            String pass=((EditText) findViewById(R.id.editTextTextPassword2)).getText().toString();
 
+        String subject="@string/subject";
+        String sEmail=((EditText) findViewById(R.id.editTextTextEmailAddress)).getText().toString();
+        String sMessage=("Uygulamamıza kayıt olduğunuz için teşekkür ederiz." + "Kullanıcı adınız:" + u_name + " "+ "Şifreniz:" + pass );
+
+        JavaMailAPI javaMailAPI=new JavaMailAPI(this,sEmail,subject,sMessage);
+        javaMailAPI.execute();
+        }
 
 }
