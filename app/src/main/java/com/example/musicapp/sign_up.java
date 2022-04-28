@@ -9,6 +9,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class sign_up extends AppCompatActivity {
     DBHelper db;
     @Override
@@ -20,7 +22,7 @@ public class sign_up extends AppCompatActivity {
 
     public void logIn (View v) {
         Intent lo_i =new Intent(this,MainActivity.class);
-        String u_name=((EditText) findViewById(R.id.editTextTextPersonName2)).getText().toString();
+        String u_name=((EditText) findViewById(R.id.editTextTextPersonName2)).getText().toString().toLowerCase();
         String e_mail=((EditText) findViewById(R.id.editTextTextEmailAddress)).getText().toString();
         String pass=((EditText) findViewById(R.id.editTextTextPassword2)).getText().toString();
         String repass=((EditText) findViewById(R.id.editTextTextPassword3)).getText().toString();
@@ -56,10 +58,10 @@ public class sign_up extends AppCompatActivity {
 
     }
         private void sendEmail(){
-            String u_name=((EditText) findViewById(R.id.editTextTextPersonName2)).getText().toString();
+            String u_name=((EditText) findViewById(R.id.editTextTextPersonName2)).getText().toString().toLowerCase();
             String pass=((EditText) findViewById(R.id.editTextTextPassword2)).getText().toString();
 
-        String subject="@string/subject";
+        String subject=getString(R.string.subject);
         String sEmail=((EditText) findViewById(R.id.editTextTextEmailAddress)).getText().toString();
         String sMessage=("Uygulamamıza kayıt olduğunuz için teşekkür ederiz." + "Kullanıcı adınız:" + u_name + " "+ "Şifreniz:" + pass );
 
