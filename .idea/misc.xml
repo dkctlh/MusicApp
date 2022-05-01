@@ -15,9 +15,11 @@
         <entry key="..\:/Users/dkctl/AndroidStudioProjects/MusicApp/app/src/main/res/drawable/pattern.xml" value="0.1425" />
         <entry key="..\:/Users/dkctl/AndroidStudioProjects/MusicApp/app/src/main/res/drawable/textfield_bg.xml" value="0.1425" />
         <entry key="..\:/Users/dkctl/AndroidStudioProjects/MusicApp/app/src/main/res/layout-v31/activity_main.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/dkctl/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_home_page.xml" value="0.33" />
-        <entry key="..\:/Users/dkctl/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_all_songs.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_home_page.xml" value="0.18" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/dkctl/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/MusicApp/app/src/main/res/layout/recyclerview_cardobjects.xml" value="0.33" />
       </map>
     </option>
   </component>

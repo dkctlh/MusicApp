@@ -3,7 +3,7 @@
     <string name="merhaba">Merhaba!  👋</string>
     <string name="devam">Devam Etmek İçin Giriş Yap</string>
     <string name="hen_z_bir_hesab_n_yok_mu">Henüz bir hesabın yok mu?</string>
-    <string name="kullanici_metni" ><font fgcolor="#6596FD"> Şartları &amp; Koşulları </font> <string  > kabul ediyorum.</string> </string>
+    <string name="kullanici_metni"><font fgcolor="#6596FD"> Şartları &amp; Koşulları </font> <string> kabul ediyorum.</string> </string>
     <string name="subject">Music App Doğrulama Mail</string>
 
 
