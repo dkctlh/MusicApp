@@ -1,4 +1,4 @@
-package com.example.musicapp;
+package DB;
 
 import android.content.ContentValues;
 import android.content.Context;

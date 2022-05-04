@@ -2,15 +2,13 @@ package com.example.musicapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.Locale;
+import DB.DBHelper;
 
 public class MainActivity extends AppCompatActivity {
     DBHelper db;
@@ -39,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
              Boolean checkuserpass=db.checkusernamepassword(u_name,pass);
              if (checkuserpass==true){
                  Toast.makeText(this, "Giriş başarılı.", Toast.LENGTH_SHORT).show();
+                 hp_i.putExtra("KullanıcıAdı",u_name);
                  startActivity(hp_i);
              }else{
                  counter++;

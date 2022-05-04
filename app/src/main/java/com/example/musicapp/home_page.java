@@ -10,7 +10,12 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import RecyclerViewPack.Music;
+import RecyclerViewPack.MusicAdapter;
+import RecyclerViewPack.MusicAdapterPlaylist;
 
 public class home_page extends AppCompatActivity {
     RecyclerView recyclerView;
@@ -18,6 +23,10 @@ public class home_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+        Intent home_page=getIntent();
+        String isim=home_page.getStringExtra("KullanıcıAdı");
+        TextView tw=((TextView) findViewById(R.id.textView5));
+        tw.setText("Merhaba"+ " "+isim);
         ActivityCompat.requestPermissions(home_page.this,
                 new String[]{Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.MANAGE_EXTERNAL_STORAGE},1);
 
@@ -29,7 +38,7 @@ public class home_page extends AppCompatActivity {
             case 1: {
                 // If request is cancelled, the result arrays are empty.
                 if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                        && grantResults[0]== PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED   ) {
                     // permission granted and now can proceed
                     recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
@@ -54,8 +63,14 @@ public class home_page extends AppCompatActivity {
             // add other cases for more permissions
         }
     }
-    public void Allsongs(View v){
+        public void allSong(View v){
         Intent alls_i=new Intent(this,AllSongs.class);
         startActivity(alls_i);
-    }
+        }
+        public void playlistPage(View v) {
+        Intent pl_i=new Intent(this,playlist_make.class);
+        startActivity(pl_i);
+        }
+
+
 }

@@ -1,4 +1,4 @@
-package com.example.musicapp;
+package JavaMail;
 
 public class Utils {
     public static final String EMAIL = "musicyapp@gmail.com";

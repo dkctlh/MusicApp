@@ -1,4 +1,4 @@
-package com.example.musicapp;
+package JavaMail;
 
 import android.content.Context;
 import android.os.AsyncTask;

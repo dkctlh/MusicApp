@@ -9,7 +9,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.Locale;
+import DB.DBHelper;
+import JavaMail.JavaMailAPI;
 
 public class sign_up extends AppCompatActivity {
     DBHelper db;
