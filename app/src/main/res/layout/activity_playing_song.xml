@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayingSong"
+    android:background="@drawable/gradient_bg">
+
+    <View
+        android:id="@+id/imageView7"
+        android:layout_width="264dp"
+        android:layout_height="288dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_page_circle1"
+        android:background="@drawable/home_page_circle1"/>
+
+    <View
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circle_blur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/circle_blur" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="117dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Şimdi Oynatılıyor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="47dp"
+        android:background="@drawable/back"
+        android:clickable="true"
+        android:onClick="home_page"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="303dp"
+        android:layout_height="292dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/music_icon"
+        />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="161dp"
+        android:clickable="true"
+        android:onClick="pauseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/play" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/skip_back" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/skip_forward"
+        android:clickable="true"
+        android:onClick="next_song"
+        />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="87dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="259dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="103dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:progressDrawable="@drawable/gradient_bg"
+
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

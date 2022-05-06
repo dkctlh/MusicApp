@@ -43,7 +43,7 @@
             android:layout_height="33dp"
             android:layout_marginStart="62dp"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Merhaba Mekselina"
+            android:text="Merhaba "
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -71,7 +71,7 @@
             app:layout_constraintEnd_toStartOf="@+id/textView6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/mekselina" />
+            android:src="@drawable/avatar" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

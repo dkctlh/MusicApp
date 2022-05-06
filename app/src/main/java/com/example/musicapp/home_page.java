@@ -51,11 +51,10 @@ public class home_page extends AppCompatActivity {
 
                     Toast.makeText(home_page.this, "Permission granted", Toast.LENGTH_SHORT).show();
 
-                  //  adapter= new ArrayAdapter<String>(getApplicationContext(),android)
+
                 } else {
 
-                    // permission denied, boo! Disable the
-                    // functionality that depends on this permission.
+
                     Toast.makeText(home_page.this, "Permission denied to read your External storage", Toast.LENGTH_SHORT).show();
                 }
                 return;
