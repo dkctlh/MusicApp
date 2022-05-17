@@ -3,6 +3,7 @@ package com.example.musicapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -21,10 +22,11 @@ public class MainActivity extends AppCompatActivity {
         db=new DBHelper(this);
 
 
-
     }
+
     int counter=0;
     public void logIn(View v){
+
         Intent hp_i =new Intent(this,home_page.class);
         Intent su_i=new Intent(this,sign_up.class);
         String u_name=((EditText) findViewById(R.id.editTextTextPersonName)).getText().toString().toLowerCase();
