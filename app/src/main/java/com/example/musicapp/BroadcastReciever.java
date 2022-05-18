@@ -18,6 +18,8 @@ public class BroadcastReciever extends BroadcastReceiver {
             audioManager.adjustVolume(AudioManager.ADJUST_MUTE, AudioManager.FLAG_PLAY_SOUND);
         }else if(res.equals("Telefon Cepte Hareketli")){
             audioManager.adjustVolume(AudioManager.ADJUST_RAISE, AudioManager.FLAG_PLAY_SOUND);
+        }else if(res.equals("Telefon Cepte Hareketsiz")){
+            audioManager.adjustVolume(AudioManager.ADJUST_MUTE, AudioManager.FLAG_PLAY_SOUND);
         }
 
 
